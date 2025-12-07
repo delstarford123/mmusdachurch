@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sermons - MMUSDA Church</title>
+    <style>
+        /* --- Shared Styling --- */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        
+        /* Header & Nav */
+        header { background-color: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+        nav { background-color: #34495e; padding: 10px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-weight: bold; }
+        nav a:hover { background-color: #2c3e50; border-radius: 4px; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #f1f1f1; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* Content Container */
+        .container { max-width: 1100px; margin: 20px auto; padding: 20px; }
+
+        /* Hero / Channel Info Section */
+        .channel-header {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #c4302b; /* YouTube Red */
+            margin-bottom: 30px;
+        }
+        .btn-youtube {
+            background-color: #c4302b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn-youtube:hover { background-color: #9e2622; }
+
+        /* Video Grid */
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .video-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .thumbnail { width: 100%; height: 180px; background-color: #000; display: flex; align-items: center; justify-content: center; color: white; }
+        .card-content { padding: 15px; }
+        .card-content h3 { margin: 0 0 10px 0; font-size: 1.1em; color: #2c3e50; }
+        .date { color: #777; font-size: 0.85em; }
+
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MMUSDA SERMON ARCHIVE</h1>
+    <p>The Proclamation of the Three Angels' Messages</p>
+</header>
+
+<nav>
+    <a href="/dashboard">Home</a>
+    <a href="/sermons">Sermons</a>
+    <a href ="#">Events</a> <a href="/churchmembers">Members</a>
+    <a href="/pastor">Pastor</a>
+    <a href="/tithes">Tithes</a>
+    <a href="/attendance">Attendance</a>
+    <a href="/register">Register</a>
+    
+    <div class="dropdown">
+        <a href="#" style="background-color: #2980b9;">Residences ▼</a>
+        <div class="dropdown-content">
+            <a href="/koromatangi">Koromatangi</a>
+            <a href="/sichirai">Sichirai</a>
+            <a href="/lurambi">Lurambi</a>
+            <a href="/malava">Malava</a>
+            <a href="/shinyalu">Shinyalu</a>
+            <a href="/mmust_block">MMUST Block</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="channel-header">
+        <h2>Masinde Muliro University SDA Church</h2>
+        <p style="font-style: italic; color: #555;">
+            "We have been given a work of the most solemn import—the proclamation of the FIRST, SECOND, and THIRD ANGELS’ MESSAGES."
+        </p>
+        <p><strong>310+ Videos | 1.45K+ Subscribers | 70k+ Views</strong></p>
+        
+        <a href="https://www.youtube.com/@mmustsdachurch4170?sub_confirmation=1" target="_blank" class="btn-youtube">
+            📺 Visit YouTube Channel & Subscribe
+        </a>
+    </div>
+
+    <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">Recent Messages</h2>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="thumbnail">
+                <a href="https://www.youtube.com/@mmustsdachurch" target="_blank" style="color:white; text-decoration:none;">
+                    ▶ Play Latest Stream
+                </a>
+            </div>
+            <div class="card-content">
+                <h3>Latest Divine Service</h3>
+                <p class="date">Streamed Live</p>
+                <p>Join us for the latest Sabbath worship service from MMUST.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail">▶ Video Archive</div>
+            <div class="card-content">
+                <h3>Vespers Service</h3>
+                <p class="date">Friday Evening</p>
+                <p>Welcoming the Holy Sabbath with praise and word.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail">▶ Video Archive</div>
+            <div class="card-content">
+                <h3>Mid-Week Prayers</h3>
+                <p class="date">Wednesday Evening</p>
+                <p>Spiritual nourishment to carry you through the week.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>MMUSDA Church Media Department</p>
+    <p>Email: mmusdachurch1844@gmail.com</p>
+</footer>
+
+</body>
+</html>

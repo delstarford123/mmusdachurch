@@ -22,31 +22,46 @@
 
         /* Main Content */
         .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
-        .welcome-section { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; margin-bottom: 20px; }
         
+        /* Welcome / Mission Section */
+        .welcome-section { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; margin-bottom: 20px; border-top: 5px solid #2980b9; }
+        .welcome-section h2 { color: #2c3e50; }
+        .mission-text { font-style: italic; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.6; }
+        .highlight { font-weight: bold; color: #d35400; }
+        
+        /* Grid Layout */
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .card h3 { color: #2980b9; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card h3 { color: #2980b9; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
+        
+        /* Social Links List */
+        .social-links { list-style: none; padding: 0; }
+        .social-links li { margin: 10px 0; }
+        .social-links a { text-decoration: none; color: #333; display: flex; align-items: center; gap: 10px; }
+        .social-links a:hover { color: #2980b9; }
         
         /* Gallery */
         .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
-        .gallery div { background-color: #ddd; height: 100px; display: flex; align-items: center; justify-content: center; color: #666; }
+        .gallery div { background-color: #ddd; height: 80px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8em; }
 
         /* Footer */
-        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 30px; margin-top: 40px; }
+        footer a { color: #bdc3c7; text-decoration: none; margin: 0 5px; }
+        footer a:hover { color: white; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>MMUSDA CHURCH DASHBOARD</h1>
+    <h1>MASINDE MULIRO UNIVERSITY SDA CHURCH</h1>
+    <p>Watchmen and Light Bearers</p>
 </header>
 
 <nav>
     <a href="/dashboard">Home</a>
-				<a href="/sermons">Sermons</a>
-				<a href ="/events">Events</a>
-				<a	href="/churchmembers">Members</a>
+    <a href="/sermons">Sermons</a>
+    <a href ="/events">Events</a>
+    <a href="/churchmembers">Members</a>
     <a href="/pastor">Pastor's Profile</a>
     <a href="/tithes">Tithes & Offerings</a>
     <a href="/attendance">Attendance</a>
@@ -66,43 +81,75 @@
 </nav>
 
 <div class="container">
+    
     <div class="welcome-section">
-        <h2>Welcome to MMUSDA Church</h2>
-        <p>We are a community of believers dedicated to spreading the gospel within the university and beyond. Join us for worship and fellowship.</p>
+        <h2>Our Sacred Mission</h2>
+        <div class="mission-text">
+            <p>✨ In a special sense Seventh-day Adventists have been set in the world as watchmen and light bearers. To them has been entrusted the last warning for a perishing world. On them is shining wonderful light from the word of God.</p>
+            <p>They have been given a work of the most solemn import—the proclamation of the <span class="highlight">FIRST, SECOND, and THIRD ANGELS’ MESSAGES</span>. There is no other work of so great importance. They are to allow nothing else to absorb their attention.</p>
+            <p><strong>(9T 19.1,2) • Revelation 14:6-12</strong></p>
+        </div>
     </div>
 
     <div class="grid-container">
         <div class="card">
-            <h3>Upcoming Events</h3>
-            <ul>
-                <li><strong>Dec 10:</strong> Vespers Service @ 7:00 PM</li>
-                <li><strong>Dec 13:</strong> Sabbath School @ 8:30 AM</li>
-                <li><strong>Dec 20:</strong> End of Semester Lunch</li>
+            <h3>Connect With Us</h3>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.youtube.com/@mmustsdachurch" target="_blank">
+                        🔴 <strong>YouTube</strong> (1.45K Subscribers)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com/MasindeMuliroSDA" target="_blank">
+                        🔵 <strong>Facebook</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Mmusda_church?s=09" target="_blank">
+                        🐦 <strong>Twitter (X)</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tiktok.com/@mmustsda?is_from_webapp=1&sender_device=pc" target="_blank">
+                        🎵 <strong>TikTok</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://whatsapp.com/channel/0029Vb2VS6M5vKA9AQyoJD3P" target="_blank">
+                        🟢 <strong>WhatsApp Channel</strong>
+                    </a>
+                </li>
             </ul>
         </div>
 
         <div class="card">
-            <h3>Recent Sermons</h3>
-            <p><strong>"Faith in Finals"</strong> - By Pr. John Doe</p>
-            <p><strong>"The Daniel Prophecy"</strong> - By Elder James</p>
-            <button style="padding: 5px 10px; margin-top: 10px; cursor: pointer;">View Archive</button>
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Sabbath:</strong> Divine Service @ 8:00 AM</li>
+                <li><strong>Wednesday:</strong> Mid-week Prayer @ 7:00 PM</li>
+                <li><strong>Friday:</strong> Vespers Service @ 7:00 PM</li>
+            </ul>
+            <p style="font-size: 0.9em; color: #666;"><em>Join us physically or stream live on YouTube.</em></p>
         </div>
 
         <div class="card">
-            <h3>Photo Gallery</h3>
-            <div class="gallery">
-                <div>Img 1</div>
-                <div>Img 2</div>
-                <div>Img 3</div>
-            </div>
+            <h3>Channel Highlights</h3>
+            <p><strong>Total Views:</strong> 70,839+</p>
+            <p><strong>Library:</strong> 310+ Videos</p>
+            <p><strong>Joined:</strong> Apr 2, 2020</p>
+            <hr>
+            <p><a href="https://www.youtube.com/@mmustsdachurch4170?sub_confirmation=1" style="background: #e74c3c; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">Subscribe Now</a></p>
         </div>
     </div>
 </div>
 
 <footer>
-    <p>MMUSDA Church | Kakamega, Kenya</p>
-    <p>Contact: info@mmusdachurch.org | +254 700 000 000</p>
-    <p>Follow us: Facebook | Twitter | YouTube</p>
+    <h3>Contact Us</h3>
+    <p>📧 Email: <a href="mailto:mmusdachurch1844@gmail.com">mmusdachurch1844@gmail.com</a></p>
+    <p>📍 Masinde Muliro University, Kenya</p>
+    <br>
+    <p>&copy; 2025 MMUSDA Church. All Rights Reserved.</p>
 </footer>
 
 </body>
