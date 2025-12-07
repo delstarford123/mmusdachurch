@@ -23,13 +23,17 @@ firebase_admin.initialize_app(cred, {
 # ==========================================
 # 2. EMAIL CONFIGURATION
 # ==========================================
+# ==========================================
+# 2. EMAIL CONFIGURATION
+# ==========================================
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_PORT'] = 465               # CHANGED: Back to 465
+app.config['MAIL_USE_TLS'] = False          # CHANGED: TLS False
+app.config['MAIL_USE_SSL'] = True           # CHANGED: SSL True
+
+# The email account that SENDS the emails
 app.config['MAIL_USERNAME'] = 'delstarfordisaiah@gmail.com'
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD', 'frdj huaq peso lipb')
-
 mail = Mail(app)
 
 # ==========================================
