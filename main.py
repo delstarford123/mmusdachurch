@@ -26,10 +26,9 @@ firebase_admin.initialize_app(cred, {
 # 2. EMAIL CONFIGURATION
 # ==========================================
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
-
+app.config['MAIL_PORT'] = 587               # CHANGED: Use Port 587 instead of 465
+app.config['MAIL_USE_TLS'] = True           # CHANGED: Turn TLS ON
+app.config['MAIL_USE_SSL'] = False
 # The email account that SENDS the emails (must match the App Password)
 app.config['MAIL_USERNAME'] = 'delstarfordisaiah@gmail.com'
 
@@ -239,7 +238,9 @@ def churchmembers():
 @app.route('/koromatangi')
 def koromatangi():
     return render_template('koro.html')
-
+@app.route('/sermons')
+def sermons():
+    return render_template('sermons.html')
 @app.route('/teazone')
 def teazone():
     return render_template('teazone.html')
