@@ -43,10 +43,11 @@ def send_async_email(app, msg):
     with app.app_context():
         try:
             mail.send(msg)
-            print(f"Background Email Sent: {msg.subject}")
+            # Add flush=True to force the log to appear immediately
+            print(f"Background Email Sent: {msg.subject}", flush=True) 
         except Exception as e:
-            print(f"Background Email Failed: {e}")
-
+            # Add flush=True here too
+            print(f"Background Email Failed: {e}", flush=True)
 def send_background_email(subject, recipient, body, attachment_name=None, attachment_data=None):
     msg = Message(subject,
                   sender=app.config['MAIL_USERNAME'],
