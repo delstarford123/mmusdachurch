@@ -2,7 +2,7 @@
   "members": {
     "-MDh123abcTeazone01": {
       "name": "Delstarford Isaiah",
-      "email": "delstarford@mmusda.org",
+      "email": "omondidelstarford@gmail.com",
       "phone": "0700123456",
       "residence": "teazone"
     },
@@ -52,26 +52,31 @@
   "attendance": {
     "-Att001Dec06": {
       "name": "Delstarford Isaiah",
+      "email": "omondidelstarford@gmail.com",
       "date": "2025-12-06",
       "service": "Vespers"
     },
     "-Att002Dec06": {
       "name": "Larry",
+      "email": "larry@mmusda.org",
       "date": "2025-12-06",
       "service": "Vespers"
     },
     "-Att003Dec07": {
       "name": "Emmanuel Kiprop",
+      "email": "e.kiprop@student.mmust.ac.ke",
       "date": "2025-12-07",
       "service": "Divine Service"
     },
     "-Att004Dec07": {
       "name": "Sarah Nekesa",
+      "email": "s.nekesa@student.mmust.ac.ke",
       "date": "2025-12-07",
       "service": "Divine Service"
     },
     "-Att005Dec07": {
       "name": "Kevin Omondi",
+      "email": "kevin.o@gmail.com",
       "date": "2025-12-07",
       "service": "Sabbath School"
     }

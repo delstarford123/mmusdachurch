@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registered Church Members</title>
+    <style>
+        /* Shared Styling */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; }
+        
+        header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+        
+        nav { background-color: #34495e; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 0 15px; font-weight: bold; }
+        nav a:hover { color: #f1c40f; }
+
+        .container { max-width: 1000px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+        /* Table Styling */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        
+        th { background-color: #2980b9; color: white; text-transform: uppercase; letter-spacing: 0.05em; }
+        tr:hover { background-color: #f1f1f1; }
+        
+        .empty-msg { text-align: center; padding: 20px; color: #777; font-style: italic; }
+        
+        .download-btn { background: #27ae60; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; float: right; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MMUSDA Membership Registry</h1>
+</header>
+
+<nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/register">Register New</a>
+    <a href="/churchmembers">View All Members</a>
+</nav>
+
+<div class="container">
+    <button class="download-btn" onclick="window.print()">Print List</button>
+    <h2>Official Member List</h2>
+    <p>Data retrieved securely from Firebase Realtime Database.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Residence</th>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if members_data %}
+                {% for key, info in members_data.items() %}
+                <tr>
+                    <td>{{ info.name }}</td>
+                    <td>{{ info.residence|capitalize }}</td>
+                    <td>{{ info.phone }}</td>
+                    <td>{{ info.email }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="4" class="empty-msg">No members found in the database yet.</td>
+                </tr>
+            {% endif %}
+            </tbody>
+    </table>
+</div>
+
+</body>
+</html>
