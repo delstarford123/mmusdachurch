@@ -1,0 +1,79 @@
+{
+  "members": {
+    "-MDh123abcTeazone01": {
+      "name": "Delstarford Isaiah",
+      "email": "delstarford@mmusda.org",
+      "phone": "0700123456",
+      "residence": "teazone"
+    },
+    "-MDh123abcTeazone02": {
+      "name": "Larry",
+      "email": "larry@mmusda.org",
+      "phone": "0711987654",
+      "residence": "teazone"
+    },
+    "-MDh123abcSich01": {
+      "name": "Kevin Omondi",
+      "email": "kevin.o@gmail.com",
+      "phone": "0722334455",
+      "residence": "sichirai"
+    },
+    "-MDh123abcSich02": {
+      "name": "Faith Wanjiku",
+      "email": "faith.w@gmail.com",
+      "phone": "0733445566",
+      "residence": "sichirai"
+    },
+    "-MDh123abcMMUST01": {
+      "name": "Emmanuel Kiprop",
+      "email": "e.kiprop@student.mmust.ac.ke",
+      "phone": "0711223344",
+      "residence": "mmust_block"
+    },
+    "-MDh123abcMMUST02": {
+      "name": "Sarah Nekesa",
+      "email": "s.nekesa@student.mmust.ac.ke",
+      "phone": "0722556677",
+      "residence": "mmust_block"
+    },
+    "-MDh123abcShinyalu01": {
+      "name": "Caleb Simiyu",
+      "email": "caleb.elder@yahoo.com",
+      "phone": "0700998877",
+      "residence": "shinyalu"
+    },
+    "-MDh123abcKoro01": {
+      "name": "John Kamau",
+      "email": "j.kamau@gmail.com",
+      "phone": "0755112233",
+      "residence": "koromatangi"
+    }
+  },
+  "attendance": {
+    "-Att001Dec06": {
+      "name": "Delstarford Isaiah",
+      "date": "2025-12-06",
+      "service": "Vespers"
+    },
+    "-Att002Dec06": {
+      "name": "Larry",
+      "date": "2025-12-06",
+      "service": "Vespers"
+    },
+    "-Att003Dec07": {
+      "name": "Emmanuel Kiprop",
+      "date": "2025-12-07",
+      "service": "Divine Service"
+    },
+    "-Att004Dec07": {
+      "name": "Sarah Nekesa",
+      "date": "2025-12-07",
+      "service": "Divine Service"
+    },
+    "-Att005Dec07": {
+      "name": "Kevin Omondi",
+      "date": "2025-12-07",
+      "service": "Sabbath School"
+    }
+  }
+}

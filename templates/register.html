@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Registration</title>
+    <style>
+        body { font-family: sans-serif; background: #eee; }
+        header { background: #8e44ad; color: white; padding: 20px; text-align: center; }
+        .form-container { max-width: 400px; margin: 40px auto; background: white; padding: 30px; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        input, select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #8e44ad; color: white; border: none; font-size: 16px; cursor: pointer; }
+        button:hover { background: #732d91; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>New Member Registration</h1>
+</header>
+
+<div class="form-container">
+    <form action="/register" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" required placeholder="Enter full name">
+
+        <label>Email Address</label>
+        <input type="email" name="email" required placeholder="Enter email">
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required placeholder="07...">
+
+        <label>State / Residence</label>
+        <select name="residence">
+            <option value="koromatangi">Koromatangi</option>
+            <option value="sichirai">Sichirai</option>
+            <option value="lurambi">Lurambi</option>
+            <option value="malava">Malava</option>
+            <option value="shinyalu">Shinyalu</option>
+            <option value="mmust_block">MMUST Block</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <p style="text-align: center;"><a href="/dashboard">Back to Dashboard</a></p>
+</div>
+
+</body>
+</html>

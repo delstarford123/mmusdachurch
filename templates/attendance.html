@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Church Attendance</title>
+    <style>
+        body { font-family: sans-serif; background: #fdfdfd; }
+        header { background: #d35400; color: white; padding: 15px; text-align: center; }
+        .box { max-width: 400px; margin: 50px auto; border: 1px solid #ddd; padding: 20px; background: white; border-radius: 5px; }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { background: #d35400; color: white; border: none; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Attendance Registry</h1>
+</header>
+
+<div class="box">
+    <form action="/attendance" method="POST">
+        <h3>Sign In</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="date" name="date" required>
+        <select name="service" style="width: 100%; padding: 10px; margin: 10px 0;">
+            <option>Sabbath School</option>
+            <option>Divine Service</option>
+            <option>Vespers</option>
+            <option>Mid-week Prayer</option>
+        </select>
+        <button type="submit">Mark Present</button>
+    </form>
+    <br>
+    <center><a href="/dashboard">Back Home</a></center>
+</div>
+
+</body>
+</html>

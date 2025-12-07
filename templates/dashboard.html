@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MMUSDA Church Dashboard</title>
+    <style>
+        /* --- Basic Styling --- */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        
+        /* Header & Nav */
+        header { background-color: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+        nav { background-color: #34495e; padding: 10px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-weight: bold; }
+        nav a:hover { background-color: #2c3e50; border-radius: 4px; }
+        
+        /* Dropdown for States */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #f1f1f1; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* Main Content */
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .welcome-section { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; margin-bottom: 20px; }
+        
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card h3 { color: #2980b9; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        
+        /* Gallery */
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+        .gallery div { background-color: #ddd; height: 100px; display: flex; align-items: center; justify-content: center; color: #666; }
+
+        /* Footer */
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MMUSDA CHURCH DASHBOARD</h1>
+</header>
+
+<nav>
+    <a href="/dashboard">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="/pastor">Pastor's Profile</a>
+    <a href="/tithes">Tithes & Offerings</a>
+    <a href="/attendance">Attendance</a>
+    <a href="/register">Register</a>
+    
+    <div class="dropdown">
+        <a href="#" style="background-color: #2980b9;">Residences / States ▼</a>
+        <div class="dropdown-content">
+            <a href="/koromatangi">Koromatangi</a>
+            <a href="/sichirai">Sichirai</a>
+            <a href="/lurambi">Lurambi</a>
+            <a href="/malava">Malava</a>
+            <a href="/shinyalu">Shinyalu</a>
+            <a href="/mmust_block">MMUST Block</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="welcome-section">
+        <h2>Welcome to MMUSDA Church</h2>
+        <p>We are a community of believers dedicated to spreading the gospel within the university and beyond. Join us for worship and fellowship.</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Dec 10:</strong> Vespers Service @ 7:00 PM</li>
+                <li><strong>Dec 13:</strong> Sabbath School @ 8:30 AM</li>
+                <li><strong>Dec 20:</strong> End of Semester Lunch</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Recent Sermons</h3>
+            <p><strong>"Faith in Finals"</strong> - By Pr. John Doe</p>
+            <p><strong>"The Daniel Prophecy"</strong> - By Elder James</p>
+            <button style="padding: 5px 10px; margin-top: 10px; cursor: pointer;">View Archive</button>
+        </div>
+
+        <div class="card">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <div>Img 1</div>
+                <div>Img 2</div>
+                <div>Img 3</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>MMUSDA Church | Kakamega, Kenya</p>
+    <p>Contact: info@mmusdachurch.org | +254 700 000 000</p>
+    <p>Follow us: Facebook | Twitter | YouTube</p>
+</footer>
+
+</body>
+</html>
